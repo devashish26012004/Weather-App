@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #226ba3;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.weather-app {
+  background-color: white;
+  max-width: 600px;
+  margin: 50px auto;
+  /* margin-left: auto;
+    margin-right: auto; */
+  border-radius: 15px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.city-input {
+  flex: 1;
+  padding: 20px;
+  margin-left: 20px;
+  border: 2px solid #226ba3;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+.search-btn {
+  background-color: #226ba3;
+  color: white;
+  border: none;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #174c75;
+}
+
+.city-date-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.city-date-section .city {
+  font-size: 2rem;
+  opacity: 0.9;
+}
+
+.city-date-section .date {
+  background-color: #91cfec;
+  padding: 7px 10px;
+  border-radius: 15px;
+}
+
+.temp-info {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.temp-info .temp {
+  font-size: 3.5rem;
+  margin-left: 35px;
+  opacity: 0.9;
+}
+
+.temp-info .description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.temp-info .description i {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.temp-info .description span {
+  font-size: 1.5rem;
+}
+
+.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.additional-info {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info {
+  background-color: #ecf0f1;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: black 0px 3px 8px;
+}
+
+.additional-info .material-icons {
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+  text-align: center;
+}
